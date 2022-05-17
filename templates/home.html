@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <title>Fish feeder</title>
+
+</head>
+<style>
+  .button-main{
+    background-color: coral;
+    padding: 10px;
+    margin: 10px;
+    color: whitesmoke;
+    border-radius: 8px;
+    width: fit-content;
+    text-decoration: none;
+  }
+  .button-main:hover{
+    background-color: gray;
+    
+  }
+</style>
+
+<body>
+
+
+  <img class="video" src="{{ url_for('video') }}" width="50%">
+  <a href="/lamp/on">
+    <div class="text button-main" style="left: 67%; top: 34%;">Turn ON Lamp</div>
+  </a>
+
+  <a href="/lamp/off">
+    <div class="text button-main" style="left: 67%; top: 55%;">Turn OFF lamp</div>
+  </a>
+
+  <a href="/lamp/delay">
+    <div class="text button-main" style="left: 58%; top: 76%;">Turn ON lamp for 15 minutes</div>
+  </a>
+
+  </div>
+</body>
+
+</html>

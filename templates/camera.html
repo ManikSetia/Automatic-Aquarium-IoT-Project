@@ -1,0 +1,27 @@
+
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Aquarium Surveillance</title>
+   <!-- <style>
+      body {background:black;color: white}
+      img {display: block;margin-left: auto;margin-right: auto;}
+      h1 {text-align: center;}
+      h2 {text-align: center;}
+      button {font: bold 15px Arial;text-decoration: none;background: darkcyan;color: white;padding: 2px 6px 2px 6px;
+              border-top: 1px solid #CCCCCC;border-right: 1px solid #333333;border-bottom: 1px solid #333333;
+              border-left: 1px solid #CCCCCC;
+              }
+      button {background: darkcyan;color:white}
+    </style> -->
+  </head>
+  <body>
+     <!-- <h2>Surveillance Camera</h2>
+     <h2>Server Time: {{ time }}</h2>
+     <h3>
+         <a href="/lamp/on"><button>TURN ON LAMP</button></a>  
+         <a href="/lamp/off"><button>TURN OFF LAMP</button></a>
+     </h3> -->
+     <img id="bg" src="{{ url_for('video_feed') }}" style="width:88%;">
+  </body>
+</html>
